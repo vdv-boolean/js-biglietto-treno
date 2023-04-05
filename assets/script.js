@@ -6,14 +6,14 @@ const trainDistance = parseInt(prompt("Distanza da percorrere in treno?"));
 
 // console.log("Train distance: " + trainDistance);
 
-document.getElementById("trainDistance").innerHTML = trainDistance;
+document.getElementById("trainDistance").innerHTML = trainDistance + " km";
 
 // Ask for user age
 const userAge = parseInt(prompt("Età passeggero?"));
 
 // console.log("Passenger age: " + userAge);
 
-document.getElementById("userAge").innerHTML = userAge;
+document.getElementById("userAge").innerHTML = userAge + " anni";
 
 // Input validator
 if (isNaN(trainDistance)) {
@@ -35,7 +35,7 @@ const ticketPrice = trainDistance * 0.21;
 
 // console.log("Ticket price: " + ticketPrice);
 
-document.getElementById("ticketPrice").innerHTML = ticketPrice;
+document.getElementById("ticketPrice").innerHTML = ticketPrice + " €";
 
 // Get ticket sale (-20% for minors and -40% for over 65)
 let ticketSale = 0;
@@ -57,11 +57,11 @@ else  {
     document.getElementById("sale").innerHTML = "Nessuno";
 }
 
-document.getElementById("ticketSale").innerHTML = ticketSale;
+document.getElementById("ticketSale").innerHTML = ticketSale + " €";
 
 // Get final ticket price
 let finalPrice = ticketPrice - ticketSale;
 
 // console.log("Final price: " + finalPrice);
 
-document.getElementById("finalPrice").innerHTML = finalPrice;
+document.getElementById("finalPrice").innerHTML = finalPrice + " €";

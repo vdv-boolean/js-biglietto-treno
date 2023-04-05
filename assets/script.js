@@ -40,7 +40,7 @@ document.getElementById("ticketPrice").innerHTML = (Math.round(ticketPrice * 100
 // Get ticket sale (-20% for minors and -40% for over 65)
 let ticketSale = 0;
 
-if (userAge <= 18) {
+if (userAge = 18) {
     ticketSale = ticketPrice / 5;
     // console.log("Sale: -20% off. Savings: " + ticketSale);
     document.getElementById("sale").innerHTML = "- 20%";

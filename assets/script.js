@@ -6,12 +6,12 @@ va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
 
 // Chiedere all'utente i km da percorrere
-const trainDistance = prompt("Distanza da percorrere in treno?")
+const trainDistance = parseInt(prompt("Distanza da percorrere in treno?"));
 
 console.log("Train distance: " + trainDistance);
 
 // Chiedere età dell'utente
-const userAge = prompt("Età passeggero?")
+const userAge = parseInt(prompt("Età passeggero?"));
 
 console.log("Passenger age: " + userAge);
 

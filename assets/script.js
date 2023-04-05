@@ -1,3 +1,6 @@
+// welcome message
+alert("Ciao, adesso calcoreremo il prezzo del biglietto per il tuo prossimo viaggio")
+
 // Ask for train kilometers
 const trainDistance = parseInt(prompt("Distanza da percorrere in treno?"));
 

@@ -1,0 +1,23 @@
+
+body {
+    background-color: #DCFAFB;
+    color: #252C38;
+    width: 1000px;
+    margin: auto;
+}
+
+header {
+    border-bottom: 3px solid #365073;
+    margin-bottom: 2rem;
+}
+
+div {
+    border-bottom: 1px solid #365073;
+    margin-bottom: 0.75rem;
+    width: 50%;
+}
+
+span {
+    color: #EA6248;
+    font-weight: bold;
+}

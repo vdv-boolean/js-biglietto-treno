@@ -6,7 +6,7 @@ const trainDistance = parseInt(prompt("Distanza da percorrere in treno?"));
 
 // console.log("Train distance: " + trainDistance);
 
-document.getElementById("trainDistance").innerHTML = trainDistance + " km";
+document.getElementById("trainDistance").innerHTML = (Math.round(trainDistance * 100) / 100).toFixed(2) + " km";
 
 // Ask for user age
 const userAge = parseInt(prompt("Età passeggero?"));
@@ -35,7 +35,7 @@ const ticketPrice = trainDistance * 0.21;
 
 // console.log("Ticket price: " + ticketPrice);
 
-document.getElementById("ticketPrice").innerHTML = ticketPrice + " €";
+document.getElementById("ticketPrice").innerHTML = (Math.round(ticketPrice * 100) / 100).toFixed(2) + " €";
 
 // Get ticket sale (-20% for minors and -40% for over 65)
 let ticketSale = 0;
@@ -57,11 +57,11 @@ else  {
     document.getElementById("sale").innerHTML = "Nessuno";
 }
 
-document.getElementById("ticketSale").innerHTML = ticketSale + " €";
+document.getElementById("ticketSale").innerHTML = (Math.round(ticketSale * 100) / 100).toFixed(2) + " €";
 
 // Get final ticket price
 let finalPrice = ticketPrice - ticketSale;
 
 // console.log("Final price: " + finalPrice);
 
-document.getElementById("finalPrice").innerHTML = finalPrice + " €";
+document.getElementById("finalPrice").innerHTML = (Math.round(finalPrice * 100) / 100).toFixed(2) + " €";

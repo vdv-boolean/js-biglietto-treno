@@ -16,14 +16,16 @@ const userAge = parseInt(prompt("Età passeggero?"));
 document.getElementById("userAge").innerHTML = userAge;
 
 // Input validator
-if isNaN(trainDistance) {
-    console.log("Hai inserito un valore errato nella distanza. Aggiorna la pagina e riprova");
+if (isNaN(trainDistance)) {
+    // console.log("Hai inserito un valore errato nella distanza. Aggiorna la pagina e riprova");
+    alert("Hai inserito un valore errato nella distanza. Aggiorna la pagina e riprova")
 } else {
 
 }
 
-if isNaN(userAge) {
-    console.log("Hai inserito una età non valida. Aggiorna la pagina e riprova");
+if (isNaN(userAge)) {
+    // console.log("Hai inserito una età non valida. Aggiorna la pagina e riprova");
+    alert("Hai inserito una età non valida. Aggiorna la pagina e riprova")
 } else {
     
 }

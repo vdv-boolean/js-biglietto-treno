@@ -16,19 +16,27 @@ const userAge = prompt("Età passeggero?")
 console.log("Passenger age: " + userAge);
 
 // Calcolare prezzo del biglietto (0.21 €/km)
-const ticketPrice = trainDistance * 0.21
+const ticketPrice = trainDistance * 0.21;
 
 console.log("Ticket price: " + ticketPrice);
+
 // Calcolare sconto in base all'età (20% per minorenni e 40% per over 65)
+let ticketSale = 0;
+
 if (userAge < 18) {
-    console.log("Sale: -20% off");
+    ticketSale = ticketPrice / 5;
+    console.log("Sale: -20% off. Savings: " + ticketSale);
 }
 
 else if (userAge > 65) {
-    console.log("Sale: -40% off");
+    ticketSale = ticketPrice / 2.5;
+    console.log("Sale: -40% off. Savings: " + ticketSale);
 }
 
 else  {
     console.log("Sale: none");
 }
+
 // Calcolare prezzo finale
+let finalPrice = ticketPrice - ticketSale;
+console.log("Final price: " + finalPrice);

@@ -25,15 +25,18 @@ let ticketSale = 0;
 if (userAge < 18) {
     ticketSale = ticketPrice / 5;
     // console.log("Sale: -20% off. Savings: " + ticketSale);
+    document.getElementById("sale").innerHTML = "- 20%";
 }
 
 else if (userAge > 65) {
     ticketSale = ticketPrice / 2.5;
     // console.log("Sale: -40% off. Savings: " + ticketSale);
+    document.getElementById("sale").innerHTML = "- 40%";
 }
 
 else  {
     // console.log("Sale: none");
+    document.getElementById("sale").innerHTML = "Nessuno";
 }
 
 document.getElementById("ticketSale").innerHTML = ticketSale;

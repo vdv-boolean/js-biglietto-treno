@@ -15,6 +15,19 @@ const userAge = parseInt(prompt("Età passeggero?"));
 
 document.getElementById("userAge").innerHTML = userAge;
 
+// Input validator
+if isNaN(trainDistance) {
+    console.log("Hai inserito un valore errato nella distanza. Aggiorna la pagina e riprova");
+} else {
+
+}
+
+if isNaN(userAge) {
+    console.log("Hai inserito una età non valida. Aggiorna la pagina e riprova");
+} else {
+    
+}
+
 // Get ticket price (0.21 €/km)
 const ticketPrice = trainDistance * 0.21;
 

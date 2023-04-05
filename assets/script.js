@@ -9,10 +9,26 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 const trainDistance = prompt("Distanza da percorrere in treno?")
 
 console.log("Train distance: " + trainDistance);
+
 // Chiedere età dell'utente
+const userAge = prompt("Età passeggero?")
+
+console.log("Passenger age: " + userAge);
 
 // Calcolare prezzo del biglietto (0.21 €/km)
+const ticketPrice = trainDistance * 0.21
 
+console.log("Ticket price: " + ticketPrice);
 // Calcolare sconto in base all'età (20% per minorenni e 40% per over 65)
+if (userAge < 18) {
+    console.log("Sale: -20% off");
+}
 
+else if (userAge > 65) {
+    console.log("Sale: -40% off");
+}
+
+else  {
+    console.log("Sale: none");
+}
 // Calcolare prezzo finale

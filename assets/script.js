@@ -1,26 +1,19 @@
-/* Il programma dovrà chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
-Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
-il prezzo del biglietto è definito in base ai km (0.21 € al km)
-va applicato uno sconto del 20% per i minorenni
-va applicato uno sconto del 40% per gli over 65.
-L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
-
-// Chiedere all'utente i km da percorrere
+// Ask for train kilometers
 const trainDistance = parseInt(prompt("Distanza da percorrere in treno?"));
 
 console.log("Train distance: " + trainDistance);
 
-// Chiedere età dell'utente
+// Ask for user age
 const userAge = parseInt(prompt("Età passeggero?"));
 
 console.log("Passenger age: " + userAge);
 
-// Calcolare prezzo del biglietto (0.21 €/km)
+// Get ticket price (0.21 €/km)
 const ticketPrice = trainDistance * 0.21;
 
 console.log("Ticket price: " + ticketPrice);
 
-// Calcolare sconto in base all'età (20% per minorenni e 40% per over 65)
+// Get ticket sale (-20% for minors and -40% for over 65)
 let ticketSale = 0;
 
 if (userAge < 18) {
@@ -37,6 +30,6 @@ else  {
     console.log("Sale: none");
 }
 
-// Calcolare prezzo finale
+// Get final ticket price
 let finalPrice = ticketPrice - ticketSale;
 console.log("Final price: " + finalPrice);
